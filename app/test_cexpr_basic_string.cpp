@@ -7,7 +7,7 @@ int main(){
 	using std::cout;
 	using std::endl;
 	// Test default constructor 
-	constexpr ra::cexpr::cexpr_basic_string<char,10> obj_A();
+	ra::cexpr::cexpr_basic_string<char,10> obj_A;
 	const unsigned char s[] = {'j','u','d','e','\0'};
 	// Test constructor with single pointer
 	ra::cexpr::cexpr_basic_string<unsigned char,20> obj_B(s);
@@ -70,6 +70,18 @@ int main(){
 	// Test clear()
 	obj_B.clear();
 	cout << "obj_B.clear. Then obj_B.size(): "<< obj_B.size() << endl;	
+	// Test to_string()
+	//std::size_t n = 596;
+	char* buffer = obj_A.data();
+	//constexpr std::size_t size = 10;
+	char okay = 'a';
+	char* ptr_okay = &okay;
+	char** end = &ptr_okay;
+	cout<<"To String"<<endl;
+	cout<<"size: "<<(ra::cexpr::to_string(596,buffer,obj_A.capacity(),end))<<endl;
+	cout<<"string: "<<buffer<<endl;
+	cout<<"Before end: "<<(*((*end)-1))<<endl;
+	cout<<"end: "<<(**end)<<endl;
 	return 0;
 }
 

@@ -2,6 +2,7 @@
 #define CEXPR
 #include <cstddef>
 #include <stdexcept>
+#include <string>
 namespace ra::cexpr{
 	// A basic string class template for use in constexpr contexts
 	template<class T, std::size_t M>
@@ -236,5 +237,70 @@ namespace ra::cexpr{
 			size_type charSize_;
 			const value_type nullChar_ = value_type(0);
 	};
+
+	template<std::size_t M>
+	using cexpr_string = cexpr_basic_string<char, M>;
+
+	constexpr char digit_to_char(std::size_t num){
+		char mychar = '0';
+		switch(num) {
+			case std::size_t(0) : mychar = '0'; break;
+			case std::size_t(1) : mychar = '1'; break;
+			case std::size_t(2) : mychar = '2'; break;
+			case std::size_t(3) : mychar = '3'; break;
+			case std::size_t(4) : mychar = '4'; break;
+			case std::size_t(5) : mychar = '5'; break;
+			case std::size_t(6) : mychar = '6'; break;
+			case std::size_t(7) : mychar = '7'; break;
+			case std::size_t(8) : mychar = '8'; break;
+			case std::size_t(9) : mychar = '9'; break;
+			default: mychar = '0';
+		}
+		return mychar;
+	}
+
+	constexpr std::size_t to_string(std::size_t n, char* buffer, std::size_t size, char** end){
+		std::size_t ite = 0;
+		const std::size_t size_const = size;
+		//char theArray[size_const] = {0};
+		char theArray_backwards[size_const] = {0};
+		while(n!=0){
+			theArray_backwards[ite] = digit_to_char(n % std::size_t(10));
+			n = n / std::size_t(10);
+			++ite;
+			if(ite > size_const){
+				throw std::runtime_error("String does not have sufficient capacity");
+				break;
+			}
+		}
+		if(ite <= size_const){
+			for(std::size_t i=0; i<ite; ++i){
+				buffer[i] = theArray_backwards[ite-1-i];
+			}
+			//buffer = theArray;
+			if(end != nullptr){
+				*end = &buffer[ite];
+			}
+		}
+		return ite;
+	}
+	/*constexpr std::size_t to_string(std::size_t n, char* buffer, std::size_t size, char** end){
+		const size_t size_const = size;
+		cexpr_string<size_const> obj;
+		std::string n_str = std::to_string(n);
+		if(n_str.size() > size_const){
+			throw std::runtime_error("String does not have sufficient capacity");
+		}
+		else{
+			for(size_t i=0; i<n_str.size(); ++i){
+				obj.push_back(n_str[i]);
+			}
+			buffer = obj.data();
+			if(end != nullptr){
+				*end = obj.data() + obj.size();
+			}
+		}
+		return (obj.size());
+	}*/
 }
 #endif
