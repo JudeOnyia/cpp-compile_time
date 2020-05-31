@@ -50,11 +50,14 @@ namespace ra::cexpr{
 			// std::runtime_error is thrown
 			constexpr cexpr_basic_string(const value_type* s) : charArray_{0}, charSize_(0){
 				while(s[charSize_] != nullChar_){
-					if(M < (charSize_+1)){ 
+					if(M <= charSize_){ 
+						clear();
 						throw std::runtime_error("String does not have sufficient capacity"); 
 					}
-					charArray_[charSize_] = s[charSize_];
-					++charSize_;
+					else{
+						charArray_[charSize_] = s[charSize_];
+						++charSize_;
+					}
 				}
 			}
 
@@ -67,9 +70,11 @@ namespace ra::cexpr{
 				if(M < (last - first)){
 					throw std::runtime_error("String does not have sufficient capacity");
 				}
-				for(const_iterator i=first; i < last; ++i){
-					charArray_[charSize_] = *i;
-					++charSize_;
+				else{
+					for(const_iterator i=first; i < last; ++i){
+						charArray_[charSize_] = *i;
+						++charSize_;
+					}
 				}
 			}
 
@@ -124,15 +129,106 @@ namespace ra::cexpr{
 				if(i<0 || i>charSize_){
 					throw std::domain_error("invalid array access");
 				}
-				if(i==charSize_){ return nullChar_; }
+				else if(i==charSize_){ return charArray_[charSize_]; }
 				else{ return charArray_[i];}
 			}
 			constexpr const_reference operator[](size_type i)const{
 				if(i<0 || i>charSize_){
 					throw std::domain_error("invalid array access");
 				}
-				if(i==charSize_){ return nullChar_; }
+				else if(i==charSize_){ return nullChar_; }
 				else{ return charArray_[i];}
+			}
+
+			// Appends (i.e., adds to the end) a single character to the
+			// string. If the size of the string is equal to the capacity,
+			// the string is not modified and an exception of type
+			// std::runtime_error is thrown.
+			constexpr void push_back(const T& x){
+				if(M <= charSize_){
+					throw std::runtime_error("String does not have sufficient capacity");
+				}
+				else{
+					charArray_[charSize_] = x;
+					++charSize_;
+				}
+			}
+
+			// Erases the last character in the string.
+			// If the string is empty, an exception of type std::runtime_error
+			// is thrown.
+			constexpr void pop_back(){
+				if(charSize_ == 0){
+					throw std::runtime_error("String does not have sufficient capacity");
+				}
+				else{
+					charArray_[charSize_ - 1] = '\0';
+					--charSize_;
+				}
+			}
+
+			// Appends (i.e., adds to the end) to the string the
+			// null-terminated string pointed to by s.
+			// Precondition: The pointer s must be non-null.
+			// If the string has insufficient capacity to hold the new value
+			// resulting from the append operation, the string is not modified
+			// and an exception of type std::runtime_error is thrown.
+			constexpr cexpr_basic_string& append(const value_type* s){
+				size_type addToSize = 0;
+				if(s == nullptr) {
+					throw std::runtime_error("Null pointer");
+				}
+				else{
+					while(s[addToSize] != nullChar_){
+						if(M <= (charSize_+addToSize)){
+							charSize_ += addToSize;
+							for(size_type i=0; i<addToSize; ++i){
+								pop_back();
+							}
+							addToSize = 0;
+							throw std::runtime_error("String does not have sufficient capacity");
+							break;
+						}
+						else{
+							charArray_[charSize_ + addToSize] = s[addToSize];
+							++addToSize;
+						}
+					}
+					charSize_ += addToSize;
+				}
+				return *this;
+			}
+
+			// Appends (i.e., adds to the end) to the string another
+			// cexpr_basic_string with the same character type (but
+			// possibly a different maximum size).
+			// If the string has insufficient capacity to hold the new value
+			// resulting from the append operation, the string is not modified
+			// and an exception of type std::runtime_error is thrown.
+			template<size_type OtherM>
+			constexpr cexpr_basic_string& append(const cexpr_basic_string<value_type, OtherM>& other){
+				size_type addToSize = 0;
+				if(M < (charSize_ + other.size())){
+					throw std::runtime_error("String does not have sufficient capacity");
+				}
+				else{
+					for(size_type i=0; i<other.size(); ++i){
+						charArray_[charSize_ + i] = other[i];
+						++addToSize;
+					}
+					charSize_ += addToSize;
+					
+				}
+				return *this;
+			}
+
+			// Erases all of the characters in the string, yielding an empty
+			// string.
+			constexpr void clear(){
+				for(size_type i=0; i<charSize_; ++i){
+					charArray_[i] = '\0';
+				}
+				charSize_ = 0;
 			}
 
 		private:
