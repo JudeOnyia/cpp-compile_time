@@ -15,7 +15,7 @@ int main(){
 	cout << "max size: " << obj_B.max_size() << endl;
 	cout << "capacity: " << obj_B.capacity() << endl;
 	cout << "size: " << obj_B.size() << endl;
-	const unsigned char j[] = {'o', 'n', 'y', 'i', 'a', '\0'};
+	constexpr unsigned char j[] = {'o', 'n', 'y', 'i', 'a', '\0'};
 	// Test constructor with pointers to first and one past last
 	constexpr ra::cexpr::cexpr_basic_string<unsigned char,6> obj_C(&j[0], &j[5]);
 	// Test member function data()
@@ -72,7 +72,7 @@ int main(){
 	cout << "obj_B.clear. Then obj_B.size(): "<< obj_B.size() << endl;	
 	// Test to_string()
 	//std::size_t n = 596;
-	char* buffer = obj_A.data();
+	char* buffer = obj_A.begin();
 	//constexpr std::size_t size = 10;
 	char okay = 'a';
 	char* ptr_okay = &okay;

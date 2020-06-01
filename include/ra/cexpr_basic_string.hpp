@@ -258,24 +258,26 @@ namespace ra::cexpr{
 		}
 		return mychar;
 	}
-
-	constexpr std::size_t to_string(std::size_t n, char* buffer, std::size_t size, char** end){
+	
+	constexpr std::size_t to_string(std::size_t n, char* buffer,std::size_t size, char** end){
 		std::size_t ite = 0;
-		const std::size_t size_const = size;
+		char temp_buf = 0;
 		//char theArray[size_const] = {0};
-		char theArray_backwards[size_const] = {0};
+		//char theArray_backwards[size] = {0};
 		while(n!=0){
-			theArray_backwards[ite] = digit_to_char(n % std::size_t(10));
+			buffer[ite] = digit_to_char(n % std::size_t(10));
 			n = n / std::size_t(10);
 			++ite;
-			if(ite > size_const){
+			if(ite > size){
 				throw std::runtime_error("String does not have sufficient capacity");
 				break;
 			}
 		}
-		if(ite <= size_const){
-			for(std::size_t i=0; i<ite; ++i){
-				buffer[i] = theArray_backwards[ite-1-i];
+		if(ite <= size){
+			for(std::size_t i=0; i<(ite/2); ++i){
+				temp_buf = buffer[i];
+				buffer[i] = buffer[ite-1-i];
+				buffer[ite-1-i] = temp_buf;
 			}
 			//buffer = theArray;
 			if(end != nullptr){
