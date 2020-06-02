@@ -40,8 +40,23 @@ namespace ra::cexpr{
 			constexpr cexpr_basic_string() : charArray_{0}, charSize_(0) {}
 
 			// Explicitly default some special members
-			constexpr cexpr_basic_string(const cexpr_basic_string&) = default;
-			constexpr cexpr_basic_string& operator=(const cexpr_basic_string&) = default;
+			constexpr cexpr_basic_string(const cexpr_basic_string& obj) = default;
+			constexpr cexpr_basic_string& operator=(const cexpr_basic_string& obj){
+				const_iterator obj_it = obj.begin();
+				if(obj.size() > M){
+					throw std::runtime_error("String does not have sufficient capacity");
+				}
+				else{
+					for(size_type i=0; i<obj.size(); ++i){
+						charArray_[i] = obj_it[i];
+					}
+					for(size_type i=obj.size(); i<=M; ++i){
+						charArray_[i] = '\0';
+					}
+					charSize_ = obj.size();
+				}
+				return *this;
+			}
 			~cexpr_basic_string() = default;
 
 			// Creates a string with the contents given by the
@@ -262,8 +277,6 @@ namespace ra::cexpr{
 	constexpr std::size_t to_string(std::size_t n, char* buffer,std::size_t size, char** end){
 		std::size_t ite = 0;
 		char temp_buf = 0;
-		//char theArray[size_const] = {0};
-		//char theArray_backwards[size] = {0};
 		while(n!=0){
 			buffer[ite] = digit_to_char(n % std::size_t(10));
 			n = n / std::size_t(10);
@@ -279,30 +292,11 @@ namespace ra::cexpr{
 				buffer[i] = buffer[ite-1-i];
 				buffer[ite-1-i] = temp_buf;
 			}
-			//buffer = theArray;
 			if(end != nullptr){
 				*end = &buffer[ite];
 			}
 		}
 		return ite;
 	}
-	/*constexpr std::size_t to_string(std::size_t n, char* buffer, std::size_t size, char** end){
-		const size_t size_const = size;
-		cexpr_string<size_const> obj;
-		std::string n_str = std::to_string(n);
-		if(n_str.size() > size_const){
-			throw std::runtime_error("String does not have sufficient capacity");
-		}
-		else{
-			for(size_t i=0; i<n_str.size(); ++i){
-				obj.push_back(n_str[i]);
-			}
-			buffer = obj.data();
-			if(end != nullptr){
-				*end = obj.data() + obj.size();
-			}
-		}
-		return (obj.size());
-	}*/
 }
 #endif

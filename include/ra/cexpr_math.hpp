@@ -52,17 +52,20 @@ namespace ra::cexpr_math {
 	// The type T is a floating-point type.
 	template<class T>
 	constexpr T sin(T x){
-		T reduced_x = mod<T>(x, 2*pi<T>);
-		T result = 0;
-		if(reduced_x < 0){
-			result = -1 * sin(abs(reduced_x));
+		if(x >= (2.0*pi<T>)){
+			x = mod<T>(x, 2.0*pi<T>);
+		}
+		T result = 0.0;
+		T base = T(0.000001);
+		if(x < 0.0){
+			result = -1.0 * sin<T>(abs<T>(x));
 		}
 		else{
-			if(x <= 0.000001){
+			if(x <= base){
 				result = x;
 			}
 			else{
-				result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+				result = (3.0*sin<T>(x/3.0)) - (4.0*cube<T>(sin<T>(x/3.0)));
 			}
 		}
 		return result;
@@ -74,7 +77,7 @@ namespace ra::cexpr_math {
 	// The type T is a floating-point type.
 	template<class T>
 	constexpr T cos(T x){
-		return (sin<T>( x + (pi<T>/2) ));
+		return (sin<T>( x + (pi<T>/2.0) ));
 	}
 
 	// Returns the tangent of x.
@@ -85,7 +88,7 @@ namespace ra::cexpr_math {
 	// The type T is a floating-point type.
 	template<class T>
 	constexpr T tan(T x){
-		T result = 0;
+		T result = 0.0;
 		T a = sin<T>(x);
 		T b = cos<T>(x);
 		if(b == 0){
