@@ -1,6 +1,0 @@
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_orig/derived/CMakeFiles/edit_cache.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_orig/derived/CMakeFiles/rebuild_cache.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_orig/derived/CMakeFiles/test_biquad_filter.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_orig/derived/CMakeFiles/test_cexpr_math.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_orig/derived/CMakeFiles/test_mandelbrot.dir
-/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_orig/derived/CMakeFiles/test_cexpr_basic_string.dir
