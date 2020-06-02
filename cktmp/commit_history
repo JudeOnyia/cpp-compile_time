@@ -1,0 +1,109 @@
+commit ddd44b41088d6da6abc5b4dde63be21adcc8a2bf
+Author: JudeOnyia <60678029+JudeOnyia@users.noreply.github.com>
+Date:   Fri May 29 00:55:23 2020 -0700
+
+    My First Commit
+
+commit 8b4a82ae0c0c63ccfa2fb34e288cd469e1e087bd
+Author: JudeOnyia <60678029+JudeOnyia@users.noreply.github.com>
+Date:   Fri May 29 01:55:51 2020 -0700
+
+    Set up the structure of cexpr_basic_string class
+
+commit fc4203a5fe1b1fc4d243d6f8972dd860378d44a0
+Author: Jude Onyia <judeonyia@ugls19.ece.uvic.ca>
+Date:   Fri May 29 02:12:34 2020 -0700
+
+    Checking Folder from assignment precheck
+
+commit f5e4a01ac9557e6b06c7349dbc5f7e196efdff4b
+Author: JudeOnyia <60678029+JudeOnyia@users.noreply.github.com>
+Date:   Fri May 29 02:16:50 2020 -0700
+
+    Removed Assign Precheck Folder
+
+commit bfbe276218a4abd78411a7355926d1c7dd748b5d
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Fri May 29 17:01:36 2020 -0700
+
+    1) Wrote the types and data members of cexpr_basic_string
+    2) Wrote the default constructor
+    3) Wrote the constructor with parameter of string pointer
+    4) Tested
+
+commit f82e1dc817588636e0b5a8d951a623cba0fcbe66
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Sat May 30 00:53:50 2020 -0700
+
+    1) Wrote max size, size and capacity functions
+    2) Wrote data, begin and end functions
+    3) Wrote operator[] overload
+
+commit 06a99e4cf21d3984ffe77a80ef06e08b3a5fa7ee
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Sat May 30 00:57:12 2020 -0700
+
+    Removed swp files
+
+commit 5fe880a9fb8917e64109972b981a36c701e1a6f0
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Sat May 30 18:49:33 2020 -0700
+
+    1) Wrote push_back() and pop_back()
+    2) Wrote  append(pointer), append(obj)
+    3) Wrote clear()
+
+commit 3dfb8efadaaa7367243c3db6c29ace0a4efccf77
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Sun May 31 00:27:48 2020 -0700
+
+    1) Wrote Alias for cexpr_basic_string called cexpr_string
+    2) Wrote to_string helper function
+
+commit ee65da40a2cec5787b274eac9e9539a84f718176
+Author: JudeOnyia <60678029+JudeOnyia@users.noreply.github.com>
+Date:   Sun May 31 01:26:13 2020 -0700
+
+    Set up for Mandelbrot section
+
+commit b3b55701af97708b386a6eb79a54d77292b53919
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Sun May 31 21:07:54 2020 -0700
+
+    1) Wrote basic Mandelbrot hpp and cpp
+    2) Modified to_string function to to accomodate clang compiler
+
+commit 1db2c71fe13c812a0f718986d289ea88d06be7ec
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Sun May 31 21:26:38 2020 -0700
+
+    1) Printed the mandelbrot to a file called mandelbrot.pnm
+    2) Displayed file on image software. Confirming it is mandelbrot
+
+commit cf9bcf5545031c9845cbb379ec2911d3bb1b814c
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Mon Jun 1 01:00:08 2020 -0700
+
+    1) Wrote template variable pi
+    2) Wrote template functions abs,sqr, cube and mod
+
+commit e52269371567c4f87e4a75c1ea4650dacde9eba3
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Mon Jun 1 02:33:02 2020 -0700
+
+    1) Wrote template functions for sin, cos, tan and sqrt
+
+commit d450669cb83518f16fde276b25d96f3baf63570c
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Mon Jun 1 14:44:45 2020 -0700
+
+    1) Wrote biquad_filter_coefs class
+    2) Wrote constexpr constructor to initialize parameters
+    3) Wrote constexpr constructor to copy from another obj
+
+commit 9873843310751781db8f11e9558bb79da4a7f42f
+Author: Jude Onyia <judeonyia10@gmail.com>
+Date:   Mon Jun 1 17:32:15 2020 -0700
+
+    1) Wrote template functions for lowpass, highpass and bandpass filters
+    2) Wrote template functions for low shelf boost and low shelf cut filters

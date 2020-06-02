@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived",
+  "command": "/home/frodo/public/ugls_lab-4.0.70/bin/clang++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include    -pedantic-errors -std=gnu++17 -o CMakeFiles/test_biquad_filter.dir/app/test_biquad_filter.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_biquad_filter.cpp",
+  "file": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_biquad_filter.cpp"
+},
+{
+  "directory": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived",
+  "command": "/home/frodo/public/ugls_lab-4.0.70/bin/clang++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include    -pedantic-errors -std=gnu++17 -o CMakeFiles/test_cexpr_math.dir/app/test_cexpr_math.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp",
+  "file": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp"
+},
+{
+  "directory": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived",
+  "command": "/home/frodo/public/ugls_lab-4.0.70/bin/clang++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include    -pedantic-errors -std=gnu++17 -o CMakeFiles/test_cexpr_basic_string.dir/app/test_cexpr_basic_string.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_basic_string.cpp",
+  "file": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_basic_string.cpp"
+},
+{
+  "directory": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived",
+  "command": "/home/frodo/public/ugls_lab-4.0.70/bin/clang++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include    -pedantic-errors -std=gnu++17 -fconstexpr-steps=100000000 -o CMakeFiles/test_mandelbrot.dir/app/test_mandelbrot.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_mandelbrot.cpp",
+  "file": "/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_mandelbrot.cpp"
+}
+]

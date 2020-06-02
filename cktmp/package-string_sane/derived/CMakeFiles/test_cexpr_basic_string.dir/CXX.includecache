@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-string_sane/source/app/test_cexpr_basic_string.cpp
+iostream
+-
+utility
+-
+ra/cexpr_basic_string.hpp
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-string_sane/source/app/ra/cexpr_basic_string.hpp
+
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-string_sane/source/include/ra/cexpr_basic_string.hpp
+cstddef
+-
+stdexcept
+-
+string
+-
+

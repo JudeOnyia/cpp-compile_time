@@ -1,0 +1,215 @@
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -S/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source -B/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/gmake  -f CMakeFiles/Makefile2 test_cexpr_math
+gmake[1]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -S/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source -B/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived --check-build-system CMakeFiles/Makefile.cmake 0
+/home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -E cmake_progress_start /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived/CMakeFiles 2
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMakeFiles/test_cexpr_math.dir/all
+gmake[2]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+/usr/bin/gmake  -f CMakeFiles/test_cexpr_math.dir/build.make CMakeFiles/test_cexpr_math.dir/depend
+gmake[3]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+cd /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived && /home/frodo/public/ugls_lab-4.0.70/packages/cmake-3.17.1/bin/cmake -E cmake_depends "Unix Makefiles" /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived/CMakeFiles/test_cexpr_math.dir/DependInfo.cmake --color=
+Scanning dependencies of target test_cexpr_math
+gmake[3]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+/usr/bin/gmake  -f CMakeFiles/test_cexpr_math.dir/build.make CMakeFiles/test_cexpr_math.dir/build
+gmake[3]: Entering directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+[ 50%] Building CXX object CMakeFiles/test_cexpr_math.dir/app/test_cexpr_math.cpp.o
+/home/frodo/public/ugls_lab-4.0.70/bin/clang++   -I/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include  -pedantic-errors -std=gnu++17 -o CMakeFiles/test_cexpr_math.dir/app/test_cexpr_math.cpp.o -c /home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp
+clang-10: warning: -Wl,-rpath,/home/frodo/public/ugls_lab-4.0.70/packages/gcc/lib64: 'linker' input unused [-Wunused-command-line-argument]
+clang-10: warning: -Wl,-rpath,/home/frodo/public/ugls_lab-4.0.70/packages/clang/lib: 'linker' input unused [-Wunused-command-line-argument]
+clang-10: warning: -Wl,-rpath,/home/frodo/public/ugls_lab-4.0.70/packages/boost/lib: 'linker' input unused [-Wunused-command-line-argument]
+clang-10: warning: -Wl,-rpath,/home/frodo/public/ugls_lab-4.0.70/packages/catch/lib64: 'linker' input unused [-Wunused-command-line-argument]
+clang-10: warning: -Wl,-rpath,/home/frodo/public/ugls_lab-4.0.70/packages/CGAL/lib64: 'linker' input unused [-Wunused-command-line-argument]
+clang-10: warning: -Wl,-rpath,/home/frodo/public/ugls_lab-4.0.70/packages/jasper/lib64: 'linker' input unused [-Wunused-command-line-argument]
+clang-10: warning: -Wl,-rpath,/home/frodo/public/ugls_lab-4.0.70/packages/clang/lib64: 'linker' input unused [-Wunused-command-line-argument]
+clang-10: warning: argument unused during compilation: '-L/home/frodo/public/ugls_lab-4.0.70/packages/gcc/lib64' [-Wunused-command-line-argument]
+clang-10: warning: argument unused during compilation: '-L/home/frodo/public/ugls_lab-4.0.70/packages/clang/lib' [-Wunused-command-line-argument]
+clang-10: warning: argument unused during compilation: '-L/home/frodo/public/ugls_lab-4.0.70/packages/boost/lib' [-Wunused-command-line-argument]
+clang-10: warning: argument unused during compilation: '-L/home/frodo/public/ugls_lab-4.0.70/packages/catch/lib64' [-Wunused-command-line-argument]
+clang-10: warning: argument unused during compilation: '-L/home/frodo/public/ugls_lab-4.0.70/packages/CGAL/lib64' [-Wunused-command-line-argument]
+clang-10: warning: argument unused during compilation: '-L/home/frodo/public/ugls_lab-4.0.70/packages/jasper/lib64' [-Wunused-command-line-argument]
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:14:17: error: constexpr variable 'x6' must be initialized by a constant expression
+        constexpr auto x6 = rcm::sin(T(5.0));
+                       ^    ~~~~~~~~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:22:2: note: in instantiation of function template specialization 'test<float>' requested here
+        test<float>();
+        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:41:3: note: constexpr evaluation hit maximum step limit; possible infinite loop?
+                if(y == 0){
+                ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:55:17: note: in call to 'mod(3.484586e-07, 6.283185e+00)'
+                T reduced_x = mod<T>(x, 2*pi<T>);
+                              ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.484586e-07)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.045376e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.136127e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:17: note: in call to 'sin(9.408382e-06)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: (skipping 7 calls in backtrace; use -fconstexpr-backtrace-limit=0 to see all)
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(6.172839e-02)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.851852e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(5.555555e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.666667e+00)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:14:22: note: in call to 'sin(5.000000e+00)'
+        constexpr auto x6 = rcm::sin(T(5.0));
+                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:16:17: error: constexpr variable 'x8' must be initialized by a constant expression
+        constexpr auto x8 = rcm::tan(T(5.0));
+                       ^    ~~~~~~~~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:38:27: note: constexpr evaluation hit maximum step limit; possible infinite loop?
+        constexpr T mod(T x, T y){
+                                 ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:55:17: note: in call to 'mod(3.484586e-07, 6.283185e+00)'
+                T reduced_x = mod<T>(x, 2*pi<T>);
+                              ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.484586e-07)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.045376e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.136127e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:17: note: in call to 'sin(9.408382e-06)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: (skipping 8 calls in backtrace; use -fconstexpr-backtrace-limit=0 to see all)
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.851852e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(5.555555e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.666667e+00)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:89:9: note: in call to 'sin(5.000000e+00)'
+                T a = sin<T>(x);
+                      ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:16:22: note: in call to 'tan(5.000000e+00)'
+        constexpr auto x8 = rcm::tan(T(5.0));
+                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:14:17: error: constexpr variable 'x6' must be initialized by a constant expression
+        constexpr auto x6 = rcm::sin(T(5.0));
+                       ^    ~~~~~~~~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:23:2: note: in instantiation of function template specialization 'test<double>' requested here
+        test<double>();
+        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:41:3: note: constexpr evaluation hit maximum step limit; possible infinite loop?
+                if(y == 0){
+                ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:55:17: note: in call to 'mod(3.484586e-07, 6.283185e+00)'
+                T reduced_x = mod<T>(x, 2*pi<T>);
+                              ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.484586e-07)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.045376e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.136127e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:17: note: in call to 'sin(9.408382e-06)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: (skipping 7 calls in backtrace; use -fconstexpr-backtrace-limit=0 to see all)
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(6.172840e-02)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.851852e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(5.555556e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.666667e+00)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:14:22: note: in call to 'sin(5.000000e+00)'
+        constexpr auto x6 = rcm::sin(T(5.0));
+                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:16:17: error: constexpr variable 'x8' must be initialized by a constant expression
+        constexpr auto x8 = rcm::tan(T(5.0));
+                       ^    ~~~~~~~~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:38:27: note: constexpr evaluation hit maximum step limit; possible infinite loop?
+        constexpr T mod(T x, T y){
+                                 ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:55:17: note: in call to 'mod(3.484586e-07, 6.283185e+00)'
+                T reduced_x = mod<T>(x, 2*pi<T>);
+                              ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.484586e-07)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.045376e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.136127e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:17: note: in call to 'sin(9.408382e-06)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: (skipping 8 calls in backtrace; use -fconstexpr-backtrace-limit=0 to see all)
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.851852e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(5.555556e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.666667e+00)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:89:9: note: in call to 'sin(5.000000e+00)'
+                T a = sin<T>(x);
+                      ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:16:22: note: in call to 'tan(5.000000e+00)'
+        constexpr auto x8 = rcm::tan(T(5.0));
+                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:14:17: error: constexpr variable 'x6' must be initialized by a constant expression
+        constexpr auto x6 = rcm::sin(T(5.0));
+                       ^    ~~~~~~~~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:24:2: note: in instantiation of function template specialization 'test<long double>' requested here
+        test<long double>();
+        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:41:3: note: constexpr evaluation hit maximum step limit; possible infinite loop?
+                if(y == 0){
+                ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:55:17: note: in call to 'mod(3.484586e-07, 6.283185e+00)'
+                T reduced_x = mod<T>(x, 2*pi<T>);
+                              ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.484586e-07)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.045376e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.136127e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:17: note: in call to 'sin(9.408382e-06)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: (skipping 7 calls in backtrace; use -fconstexpr-backtrace-limit=0 to see all)
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(6.172840e-02)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.851852e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(5.555556e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.666667e+00)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:14:22: note: in call to 'sin(5.000000e+00)'
+        constexpr auto x6 = rcm::sin(T(5.0));
+                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:16:17: error: constexpr variable 'x8' must be initialized by a constant expression
+        constexpr auto x8 = rcm::tan(T(5.0));
+                       ^    ~~~~~~~~~~~~~~~~
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:38:27: note: constexpr evaluation hit maximum step limit; possible infinite loop?
+        constexpr T mod(T x, T y){
+                                 ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:55:17: note: in call to 'mod(3.484586e-07, 6.283185e+00)'
+                T reduced_x = mod<T>(x, 2*pi<T>);
+                              ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.484586e-07)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.045376e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(3.136127e-06)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:17: note: in call to 'sin(9.408382e-06)'
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                            ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: (skipping 8 calls in backtrace; use -fconstexpr-backtrace-limit=0 to see all)
+                                result = (3*sin(reduced_x/3)) - (4*cube(sin(reduced_x/3)));
+                                                                        ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.851852e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(5.555556e-01)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:65:45: note: in call to 'sin(1.666667e+00)'
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/include/ra/cexpr_math.hpp:89:9: note: in call to 'sin(5.000000e+00)'
+                T a = sin<T>(x);
+                      ^
+/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/source/app/test_cexpr_math.cpp:16:22: note: in call to 'tan(5.000000e+00)'
+        constexpr auto x8 = rcm::tan(T(5.0));
+                            ^
+6 errors generated.
+gmake[3]: *** [CMakeFiles/test_cexpr_math.dir/app/test_cexpr_math.cpp.o] Error 1
+gmake[3]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+gmake[2]: *** [CMakeFiles/test_cexpr_math.dir/all] Error 2
+gmake[2]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+gmake[1]: *** [CMakeFiles/test_cexpr_math.dir/rule] Error 2
+gmake[1]: Leaving directory `/home/judeonyia/Documents/ECE596C_Assignments/ECE596C_Assgn_2/cpp_compile_time-JudeOnyia/cktmp/package-math_sane/derived'
+gmake: *** [test_cexpr_math] Error 2
+ERROR: build failed to generate executable test_cexpr_math
