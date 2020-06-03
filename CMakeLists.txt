@@ -5,7 +5,11 @@ cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 project(cpp_compile_time LANGUAGES CXX)
 
 # For Clang:
-set(EXTRA_COMPILE_FLAGS "-fconstexpr-steps=100000000")
+if(CMAKE_CXX_COMPILER_ID MATCHES GNU)
+	set(EXTRA_COMPILE_FLAGS "-fconstexpr-loop-limit=10000 -fconstexpr-ops-limit=1000000000")
+elseif(CMAKE_CXX_COMPILER_ID MATCHES Clang)
+	set(EXTRA_COMPILE_FLAGS "-fconstexpr-steps=100000000")
+endif()
 set_source_files_properties(app/test_mandelbrot.cpp PROPERTIES COMPILE_FLAGS ${EXTRA_COMPILE_FLAGS})
 
 # Set Include Directory

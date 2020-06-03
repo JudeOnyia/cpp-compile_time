@@ -72,20 +72,6 @@ namespace ra::fractal {
 			obj.push_back('\n');
 		}
 
-		//obj.push_back('P');
-		//obj.push_back('1');
-		//obj.push_back(' ');
-		//W_str_size = ra::cexpr::to_string(W,W_str,10,nullptr);
-		//for(std::size_t i=0; i<W_str_size; ++i){
-			//obj.push_back(W_str[i]);
-		//}
-		//obj.push_back(' ');
-		//H_str_size = ra::cexpr::to_string(H,H_str,10,nullptr);
-		//for(std::size_t i=0; i<H_str_size; ++i){
-			//obj.push_back(H_str[i]);
-		//}
-		//obj.push_back('\n');
-
 		return obj;
 		
 	}

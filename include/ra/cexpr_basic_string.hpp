@@ -44,7 +44,7 @@ namespace ra::cexpr{
 			constexpr cexpr_basic_string& operator=(const cexpr_basic_string& obj){
 				const_iterator obj_it = obj.begin();
 				if(obj.size() > M){
-					throw std::runtime_error("String does not have sufficient capacity");
+					throw std::runtime_error("");
 				}
 				else{
 					for(size_type i=0; i<obj.size(); ++i){
@@ -68,7 +68,7 @@ namespace ra::cexpr{
 				while(s[charSize_] != nullChar_){
 					if(M <= charSize_){ 
 						clear();
-						throw std::runtime_error("String does not have sufficient capacity"); 
+						throw std::runtime_error(""); 
 					}
 					else{
 						charArray_[charSize_] = s[charSize_];
@@ -84,7 +84,7 @@ namespace ra::cexpr{
 			// std::runtime_error is thrown.
 			constexpr cexpr_basic_string(const_iterator first, const_iterator last) : charArray_{0}, charSize_(0){
 				if(M < (last - first)){
-					throw std::runtime_error("String does not have sufficient capacity");
+					throw std::runtime_error("");
 				}
 				else{
 					for(const_iterator i=first; i < last; ++i){
@@ -143,14 +143,14 @@ namespace ra::cexpr{
 			// Precondition: The index i is such that i >= 0 and i <= size().
 			constexpr reference operator[](size_type i){
 				if(i<0 || i>charSize_){
-					throw std::domain_error("invalid array access");
+					throw std::domain_error("");
 				}
 				else if(i==charSize_){ return charArray_[charSize_]; }
 				else{ return charArray_[i];}
 			}
 			constexpr const_reference operator[](size_type i)const{
 				if(i<0 || i>charSize_){
-					throw std::domain_error("invalid array access");
+					throw std::domain_error("");
 				}
 				else if(i==charSize_){ return nullChar_; }
 				else{ return charArray_[i];}
@@ -162,7 +162,7 @@ namespace ra::cexpr{
 			// std::runtime_error is thrown.
 			constexpr void push_back(const T& x){
 				if(M <= charSize_){
-					throw std::runtime_error("String does not have sufficient capacity");
+					throw std::runtime_error("");
 				}
 				else{
 					charArray_[charSize_] = x;
@@ -175,7 +175,7 @@ namespace ra::cexpr{
 			// is thrown.
 			constexpr void pop_back(){
 				if(charSize_ == 0){
-					throw std::runtime_error("String does not have sufficient capacity");
+					throw std::runtime_error("");
 				}
 				else{
 					charArray_[charSize_ - 1] = '\0';
@@ -192,7 +192,7 @@ namespace ra::cexpr{
 			constexpr cexpr_basic_string& append(const value_type* s){
 				size_type addToSize = 0;
 				if(s == nullptr) {
-					throw std::runtime_error("Null pointer");
+					throw std::runtime_error("");
 				}
 				else{
 					while(s[addToSize] != nullChar_){
@@ -202,7 +202,7 @@ namespace ra::cexpr{
 								pop_back();
 							}
 							addToSize = 0;
-							throw std::runtime_error("String does not have sufficient capacity");
+							throw std::runtime_error("");
 							break;
 						}
 						else{
@@ -225,7 +225,7 @@ namespace ra::cexpr{
 			constexpr cexpr_basic_string& append(const cexpr_basic_string<value_type, OtherM>& other){
 				size_type addToSize = 0;
 				if(M < (charSize_ + other.size())){
-					throw std::runtime_error("String does not have sufficient capacity");
+					throw std::runtime_error("");
 				}
 				else{
 					for(size_type i=0; i<other.size(); ++i){
@@ -282,7 +282,7 @@ namespace ra::cexpr{
 			n = n / std::size_t(10);
 			++ite;
 			if(ite > size){
-				throw std::runtime_error("String does not have sufficient capacity");
+				throw std::runtime_error("");
 				break;
 			}
 		}

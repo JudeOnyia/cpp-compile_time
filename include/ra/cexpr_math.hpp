@@ -39,7 +39,7 @@ namespace ra::cexpr_math {
 		long long n = 0;
 		T remainder = 0;
 		if(y == 0){
-			throw std::overflow_error("zero modulus");
+			throw std::overflow_error("");
 		}
 		n = (long long)(x / y);
 		remainder = x - ( ((T)n) * y );
@@ -92,7 +92,7 @@ namespace ra::cexpr_math {
 		T a = sin<T>(x);
 		T b = cos<T>(x);
 		if(b == 0){
-			throw std::overflow_error("infinite tangent");
+			throw std::overflow_error("");
 		}
 		else{
 			result = a / b;
@@ -111,7 +111,7 @@ namespace ra::cexpr_math {
 		T result = x;
 		T result_next = x;
 		if(x < 0){
-			throw std::domain_error("square root of negative number");
+			throw std::domain_error("");
 		}
 		else{
 			do{
